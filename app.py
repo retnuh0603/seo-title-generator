@@ -9,6 +9,8 @@ st.set_page_config(page_title="SEO Title Tag Generator")
 
 st.title("Bulk SEO Title Tag Generator")
 
+st.header("By SEOAirman")
+
 st.write(
     "Paste your URLs below. Each page will be crawled and a new, "
     "perfectly optimized title tag will be written. You will have the "
