@@ -30,7 +30,7 @@ st.markdown(
 
     h1 {
         color: #111827;
-        font-size: 80px;
+        font-size: 8px;
         font-weight: 800;
         letter-spacing: -0.03em;
         text-align: center;
