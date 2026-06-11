@@ -7,7 +7,7 @@ from openai import OpenAI
 # 1. Page Configuration & UI Layout
 st.set_page_config(page_title="SEO Title Tag Generator")
 
-st.title("Bulk SEO Title Tag Generator", text_alignment="center") 
+st.title("Bulk SEO Title Tag Generator", text_alignment="right") 
 st.subheader("By SEOAirman")
 
 st.write(
