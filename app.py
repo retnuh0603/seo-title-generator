@@ -29,7 +29,7 @@ st.markdown(
     ========================= */
 
     h1 {
-        color: #111827;
+        color: red;
         font-size: 8px;
         font-weight: 800;
         letter-spacing: -0.03em;
