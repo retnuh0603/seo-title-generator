@@ -9,7 +9,7 @@ st.set_page_config(page_title="SEO Title Tag Generator")
 
 image_icon = "seoairman-icon.png"
 st.title("Bulk SEO Title Tag Generator", text_alignment="center") 
-st.subheader("By SEOAirman")
+st.subheader("By SEOAirman", text_alignment="center")
 st.image("seoairman-icon.png")
 
 
