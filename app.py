@@ -8,7 +8,6 @@ from openai import OpenAI
 st.set_page_config(page_title="SEO Title Tag Generator")
 
 st.title("Bulk SEO Title Tag Generator")
-
 st.header("By SEOAirman")
 
 st.write(
