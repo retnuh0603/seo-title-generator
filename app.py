@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from openai import OpenAI
 
 # 1. Page Configuration & UI Layout
-st.set_page_config(page_title="SEO Title Generator")
+st.set_page_config(page_title="SEO Title Tag Generator")
 
 st.title("Bulk SEO Title Tag Generator")
 
