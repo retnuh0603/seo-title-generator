@@ -7,6 +7,171 @@ from openai import OpenAI
 # 1. Page Configuration & UI Layout
 st.set_page_config(page_title="SEO Title Tag Generator")
 
+st.markdown(
+    """
+    <style>
+    /* =========================
+       Overall App
+    ========================= */
+
+    .stApp {
+        background: #f5f7fb;
+    }
+
+    .main .block-container {
+        max-width: 950px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* =========================
+       Headings + Text
+    ========================= */
+
+    h1 {
+        color: #111827;
+        font-size: 42px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    h2, h3 {
+        color: #111827;
+    }
+
+    p, label, span {
+        color: #374151;
+        font-size: 16px;
+    }
+
+    /* =========================
+       Text Area
+    ========================= */
+
+    .stTextArea textarea {
+        background-color: #ffffff;
+        color: #111827;
+        border: 1px solid #d1d5db;
+        border-radius: 14px;
+        padding: 14px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .stTextArea textarea:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    /* =========================
+       Primary Button
+    ========================= */
+
+    .stButton button {
+        background-color: #2563eb;
+        color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        padding: 0.75rem 1.25rem;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        transition: all 0.2s ease;
+    }
+
+    .stButton button:hover {
+        background-color: #1d4ed8;
+        color: #ffffff;
+        transform: translateY(-1px);
+        box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+    }
+
+    .stButton button:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    /* =========================
+       Download Button
+    ========================= */
+
+    .stDownloadButton button {
+        background-color: #059669;
+        color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        padding: 0.75rem 1.25rem;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+    }
+
+    .stDownloadButton button:hover {
+        background-color: #047857;
+        color: #ffffff;
+        transform: translateY(-1px);
+        box-shadow: 0 8px 18px rgba(5, 150, 105, 0.25);
+    }
+
+    /* =========================
+       Dataframe / Table Area
+    ========================= */
+
+    .stDataFrame {
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid #e5e7eb;
+    }
+
+    /* =========================
+       Alerts
+    ========================= */
+
+    .stAlert {
+        border-radius: 12px;
+    }
+
+    /* =========================
+       Progress Bar
+    ========================= */
+
+    .stProgress > div > div > div > div {
+        background-color: #2563eb;
+    }
+
+    /* =========================
+       Optional Custom Card
+       Use with st.markdown HTML
+    ========================= */
+
+    .custom-card {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 18px;
+        padding: 28px;
+        box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+        margin-bottom: 24px;
+    }
+
+    .custom-card h1,
+    .custom-card h2,
+    .custom-card h3 {
+        margin-top: 0;
+    }
+
+    .muted-text {
+        color: #6b7280;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.title("Bulk SEO Title Tag Generator")
 st.subheader("By SEOAirman")
 
