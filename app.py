@@ -7,13 +7,6 @@ from openai import OpenAI
 # 1. Page Configuration & UI Layout
 st.set_page_config(page_title="SEO Title Tag Generator")
 
-hide_st_style = """
-            <style>
-            ._streamlitAppContainer_nim44_1 _embed_nim44_18 {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 st.title("Bulk SEO Title Tag Generator", text_alignment="center") 
 with st.container(horizontal_alignment="center"):
     st.image("hunterlogoblack.svg", width=150)
