@@ -9,7 +9,7 @@ st.set_page_config(page_title="SEO Title Tag Generator")
 
 st.title("Bulk SEO Title Tag Generator", text_alignment="center") 
 with st.container(horizontal_alignment="center"):
-    st.image("hunterlogoblack.svg", width="content")
+    st.image("hunterlogoblack.svg", width="100")
 
 
 st.write(
