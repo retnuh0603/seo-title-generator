@@ -4,15 +4,6 @@ import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 # 1. Page Configuration & UI Layout
 st.set_page_config(page_title="SEO Title Tag Generator")
 
