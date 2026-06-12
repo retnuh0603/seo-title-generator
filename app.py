@@ -9,7 +9,7 @@ st.set_page_config(page_title="SEO Title Tag Generator")
 
 hide_st_style = """
             <style>
-            footer {visibility: hidden;}
+            ._streamlitAppContainer_nim44_1 _embed_nim44_18 {visibility: hidden;}
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
