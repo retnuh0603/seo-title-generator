@@ -196,7 +196,7 @@ if st.button("Generate SEO Title Tags"):
         df = pd.DataFrame(results)
 
         # Show interactive preview table on screen
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, use_container_width=True, hide_index=True)
 
         # Generate the physical CSV file download button
         csv_data = df.to_csv(index=False).encode("utf-8")
